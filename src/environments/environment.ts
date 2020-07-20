@@ -1,12 +1,11 @@
 import { KeycloakConfig } from 'keycloak-angular';
 
-// Add here your keycloak setup infos
 let keycloakConfig: KeycloakConfig = {
   url: 'http://localhost:8088/auth',
   realm: 'realmTEST',
   clientId: ' ',
   credentials: {
-    secret: 'SECRET_HERE',
+    secret: '66d8a2f6-8763-4519-8da6-bbcef7870cc5',
   },
 };
 
