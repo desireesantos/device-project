@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Repository } from '../model/repos';
+import { Component } from '@angular/core';
 import { GitHubService } from './http-request.service';
 
 @Component({

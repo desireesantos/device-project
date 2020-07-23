@@ -1,7 +1,11 @@
-<div>
+<div class="container">
   <h3>{{ title | uppercase }}</h3>
-  <button type="button" (click)="getRepositories()">Get Repository</button>
   <p *ngIf="!repos">Click to see the list of repositories</p>
+  <p *ngIf="repos">Repository {{ userName | uppercase }}</p>
+  <div>
+    <button type="button" (click)="getRepositories()">Get Repository</button>
+    <input type="text" [(ngModel)]="userName" />
+  </div>
   <ul>
     <li *ngFor="let repo of repos">{{ repo.name }}</li>
   </ul>
