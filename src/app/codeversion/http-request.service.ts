@@ -7,10 +7,11 @@ import { Observable } from 'rxjs';
 })
 export class GitHubService {
   baseUrl: string = 'https://api.github.com/';
+  repos: any[] = [];
 
   constructor(private http: HttpClient) {}
 
   getRepositories(userName: string): Observable<any> {
-    return this.http.get(this.baseUrl + 'users/' + userName + 'repos');
+    return this.http.get(this.baseUrl + 'users/' + userName + '/repos');
   }
 }

@@ -6,6 +6,10 @@ div {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+p {
+  padding-bottom: 34px;
+}
+
 ul {
   padding: 0px 10px;
 }

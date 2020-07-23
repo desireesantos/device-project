@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Repository } from '../model/repos';
 import { GitHubService } from './http-request.service';
 
@@ -8,9 +8,9 @@ import { GitHubService } from './http-request.service';
   styleUrls: ['./codeversion.component.css'],
 })
 export class CodeversionComponent {
-  title = 'Project';
-  userName: string = 'tektutorialshub';
-  repo: Repository[];
+  title = 'Repositories Name';
+  userName: string = 'desireesantos';
+  repos: any[];
 
   constructor(private gitHubService: GitHubService) {}
 
@@ -18,8 +18,7 @@ export class CodeversionComponent {
     this.gitHubService.getRepositories(this.userName).subscribe(
       (response) => {
         console.log('response received');
-        this.repo = response;
-        console.log('---', response);
+        this.repos = response;
       },
       (error) => {
         console.log('Error', error);

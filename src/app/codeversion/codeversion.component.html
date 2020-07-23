@@ -1,9 +1,8 @@
 <div>
   <h3>{{ title | uppercase }}</h3>
-  <ul>
-    <li>Project 1</li>
-    <li>Project 2</li>
-    <li>Project 3</li>
-  </ul>
   <button type="button" (click)="getRepositories()">Get Repository</button>
+  <p *ngIf="!repos">Click to see the list of repositories</p>
+  <ul>
+    <li *ngFor="let repo of repos">{{ repo.name }}</li>
+  </ul>
 </div>
