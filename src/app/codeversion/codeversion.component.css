@@ -2,9 +2,8 @@ div {
   margin: 20px;
   background-color: burlywood;
   position: relative;
-  width: 100%;
-  height: 100%;
   text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 ul {
@@ -27,18 +26,17 @@ h3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 button {
-  background-color: lightblue;
-  color: white;
+  background-color: rebeccapurple;
   text-align: center;
   padding: 15px 20px;
   border: none;
   border-radius: 6px;
   font-size: 18px;
-
-  margin-left: 50%;
-  margin-right: 50%;
-  margin-bottom: 5px;
+  color: white;
+  margin: 41px 0px 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
